@@ -29,8 +29,6 @@ mapDoubleX2 :: (Double -> Double) -> DoubleX2 -> DoubleX2
 mapDoubleX2 func d = case unpackDoubleX2 d of
   (d1, d2) -> packDoubleX2 (func d1, func d2)
 
-readDoubleX2 :: MutableByteArray s ->
-
 instance Num DoubleX2 where
   (+) = plusDoubleX2
   (-) = minusDoubleX2
